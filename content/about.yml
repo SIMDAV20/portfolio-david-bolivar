@@ -1,0 +1,25 @@
+title: About Me
+description: Learn more about my journey as a Software Engineer with over 6 years of experience, my expertise in backend systems and cloud infrastructure, and my current path into AI Engineering.
+content: |
+  Hi, I'm **David Bolivar**, a Software Engineer with over **6 years of experience** driving backend innovation. I specialize in high-performance **PHP**, **Node.js**, and **Python** ecosystems, and I have solid expertise in **Cloud Infrastructure** across both **AWS** and **Azure** platforms.
+
+  Throughout my career, I've worked on complex backend systems, designing scalable APIs, optimizing performance, and delivering reliable solutions that create real business value. I'm passionate about writing clean, maintainable code and building systems that stand the test of time.
+
+  ### Expanding into AI Engineering
+
+  I'm currently on an exciting journey into **AI Engineering**, deepening my knowledge through advanced training in **Data Analysis** and **Python**. My goal is to bridge the gap between traditional software engineering and modern **AI/ML technologies**, combining backend expertise with intelligent systems to solve more complex and meaningful problems.
+
+  ### What Drives Me
+
+  What keeps me motivated is the constant evolution of technology and the challenge of staying ahead of the curve. I believe that the best engineers are those who never stop learning — and moving into the AI space is the natural next step in that journey.
+
+  ### Beyond the Code
+
+  When I'm not building or learning, I enjoy exploring new technologies, contributing to open-source projects, and connecting with the developer community.
+
+  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
+images:
+  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    alt: My coffee workspace
+  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    alt: My trip to Tokyo

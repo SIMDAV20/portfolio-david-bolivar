@@ -1,0 +1,8 @@
+title: Document Management System
+description: A business document management and organization system. Platform designed to centralize, classify, and efficiently manage documents within corporate environments. Currently in active development.
+image: /projects/plat-manage-documents.png
+url: "#"
+tags: ["Vue 3", "Laravel 10", "MySQL"]
+date: "2026"
+status: "active"
+company: "Personal Projects"

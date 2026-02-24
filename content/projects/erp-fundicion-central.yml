@@ -1,0 +1,8 @@
+title: ERP — Fundición Central
+description: A full-featured ERP system for managing a smelting and manufacturing plant. Covers production, inventory, human resources, and finance modules, integrating stored procedures for complex business logic.
+image: /projects/plat-fundicion-central.png
+url: "#"
+tags: ["Vue 3", "Laravel 12", "MySQL", "Stored Procedures"]
+date: "2023"
+status: "completed"
+company: "Delfosti"

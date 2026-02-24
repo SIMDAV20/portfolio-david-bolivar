@@ -1,0 +1,25 @@
+seo:
+  title: "Career & Education — David Bolivar"
+  description: "A chronological overview of my academic journey, from a dual undergraduate degree to a Master's in IT Project Management and ongoing AI engineering training."
+title: "Education & Career"
+description: "A chronological overview of my academic journey — from a dual undergraduate degree in Peru and the USA to a Master's in Spain and ongoing specialisation in AI engineering."
+
+education:
+  - year: "2013"
+    title: "Dual Degree Programme"
+    institution: "USIL — Universidad San Ignacio de Loyola (Peru) & San Ignacio University (USA)"
+    description: "Completed two parallel undergraduate programmes simultaneously: Systems Engineering and International Business. A unique dual-institution track spanning Peru and the United States. Programme duration: 2013 – 2022."
+    icon: "i-lucide-graduation-cap"
+
+  - year: "2023"
+    title: "Master's in IT Project Management"
+    institution: "Universidad Internacional de La Rioja — UNIR (Spain)"
+    description: "Enrolled in the Master's in IT Project Management, focusing on agile methodologies, software governance, and strategic technology leadership. Programme duration: November 2023 – November 2024."
+    icon: "i-lucide-plane"
+
+  - year: "2025"
+    title: "AI & Data Analysis Bootcamp"
+    institution: "TripleTen"
+    description: "Joined TripleTen's intensive bootcamp to deepen expertise in full-stack modern development, data analysis and AI engineering with Python, pandas, and ML fundamentals. Programme duration: January 2025 – January 2026."
+    icon: "i-lucide-brain-circuit"
+

@@ -1,0 +1,148 @@
+seo:
+  title: "David Bolivar - Software Engineer"
+  description: "Welcome to my portfolio! I'm David Bolivar, a Software Engineer with over 6 years of experience in backend systems, PHP/Node.js/Python, and Cloud Infrastructure (AWS/Azure). Currently expanding into AI Engineering."
+title: "Hey, I'm David Bolivar Software Engineer"
+description: "Software Engineer with over 6 years of experience driving backend innovation. Expert in PHP/Node.js/Python and Cloud Infrastructure (AWS/Azure). Currently expanding into AI Engineering."
+hero:
+  links:
+    - label: "david14847@gmail.com"
+      to: "https://mail.google.com/mail/?view=cm&fs=1&to=david14847@gmail.com"
+      color: "neutral"
+      target: "_blank"
+      icon: "i-lucide-mail"
+  # images:
+  #   - src: /hero/random-1.avif
+  #     alt: Random Image 1
+  #   - src: /hero/random-2.avif
+  #     alt: Random Image 2
+  #   - src: /hero/random-3.avif
+  #     alt: Random Image 3
+  #   - src: /hero/random-4.avif
+  #     alt: Random Image 4
+  #   - src: /hero/random-5.avif
+  #     alt: Random Image 5
+  #   - src: /hero/random-6.avif
+  #     alt: Random Image 6
+  #   - src: /hero/random-7.avif
+  #     alt: Random Image 7
+  #   - src: /hero/random-8.avif
+  #     alt: Random Image 8
+  #   - src: /hero/random-9.avif
+  #     alt: Random Image 9
+about:
+  title: "About Me"
+  description: |
+    Software Engineer with over 6 years of experience driving backend innovation. Expert in high-performance PHP/Node.js/Python ecosystems and Cloud Infrastructure (AWS/Azure).
+    Currently expanding into AI Engineering through advanced training in Data Analysis and Machine Learning. Adept at bridging the gap between traditional software engineering and modern AI/ML technologies to deliver scalable, strategic value.
+experience:
+  title: Work Experience
+  items:
+    - position: "Senior Backend Engineer at"
+      date: "06/2025 - 02/2026"
+      company:
+        name: Indra
+        logo: "i-simple-icons-indra"
+        url: "https://www.indracompany.com/"
+        color: "#E5001E"
+    - position: "Senior PHP & JS Developer at"
+      date: "09/2024 - 02/2025"
+      company:
+        name: Centrum PUCP
+        logo: "i-lucide-graduation-cap"
+        url: "https://centrum.pucp.edu.pe/"
+        color: "#1A5276"
+    - position: "Technical Team Leader at"
+      date: "01/2023 - 08/2023"
+      company:
+        name: Delfosti
+        logo: "i-lucide-briefcase"
+        url: "https://delfosti.com/"
+        color: "#FF6B35"
+    - position: "Software Developer & Supervisor at"
+      date: "05/2022 - 12/2022"
+      company:
+        name: AMG Financiera
+        logo: "i-lucide-landmark"
+        url: "#"
+        color: "#2E86C1"
+    - position: "Full Stack Developer at"
+      date: "03/2021 - 04/2022"
+      company:
+        name: Compañía de Precios del Perú S.A.
+        logo: "i-lucide-chart-bar"
+        url: "#"
+        color: "#27AE60"
+    - position: "Front-End Developer at"
+      date: "07/2020 - 02/2021"
+      company:
+        name: Grupo System E.I.R.L.
+        logo: "i-lucide-monitor"
+        url: "#"
+        color: "#8E44AD"
+    - position: "Junior Developer (Internship) at"
+      date: "09/2018 - 01/2020"
+      company:
+        name: Abbost E.I.R.L.
+        logo: "i-lucide-code-2"
+        url: "#"
+        color: "#E67E22"
+testimonials:
+  - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
+    author:
+      name: 'Sarah Chen'
+      description: 'Product Director at Bloom Finance'
+      avatar:
+        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+  - quote: "Working with Emma was the best decision we made for our startup. She didn't just deliver designs—she challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless."
+    author:
+      name: 'Michael Rodriguez'
+      description: 'Co-founder of Wavelength Music'
+      avatar:
+        src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+  - quote: "Emma stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. She approaches each problem with both creativity and analytical rigor, which is exactly what we needed."
+    author:
+      name: 'Dr. Aisha Johnson'
+      description: 'Chief Innovation Officer at GreenTech Solutions'
+      avatar:
+        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+blog:
+  title: "Latest Articles"
+  description: "Some of my recent thoughts"
+faq:
+  title: Skills & Education
+  description: Technologies I work with and my academic background.
+  categories:
+    - title: Cloud & DevOps
+      questions:
+        - label: What cloud platforms and DevOps tools do you use?
+          content: |
+            I specialize in AWS and Azure cloud architectures. On AWS I work daily with EC2, S3, Lambda, DynamoDB, CloudFront, Cognito, CloudFormation, and SSM. On Azure I use Azure Pipelines and Key Vault. For containerization and CI/CD I rely on Docker and GitHub Actions.
+        - label: Do you have experience with Infrastructure as Code (IaC)?
+          content: |
+            Yes. I design and deploy cloud infrastructure using AWS CloudFormation and coordinate CI/CD pipelines on both AWS and Azure. I've built serverless event-driven architectures from scratch and applied IaC principles to ensure repeatable, scalable deployments.
+    - title: Backend & Frontend
+      questions:
+        - label: What backend technologies do you master?
+          content: |
+            My core backend stack includes Node.js, NestJS, FastAPI, Flask, and Laravel (PHP). I've built REST APIs, serverless microservices, and event-driven systems for banking, ERP, and academic platforms.
+        - label: What frontend frameworks do you use?
+          content: |
+            I build interfaces with Nuxt.js, Vue 2 & 3, React, Next.js, and Angular. I also have experience with React Native and Flutter for cross-platform mobile development. For styling I use Tailwind CSS and Bootstrap.
+        - label: What databases do you work with?
+          content: |
+            I work with both relational and NoSQL databases: PostgreSQL, MySQL, and MongoDB. I have experience optimizing complex queries, stored procedures, and database migrations for high-availability systems.
+    - title: Education
+      questions:
+        - label: What is your academic background?
+          content: |
+            I hold a Master's degree in IT Project Management from Universidad Internacional de La Rioja (Spain, 2023–2024), a Systems Engineering degree from Universidad San Ignacio de Loyola (Peru, 2013–2022), and an International Business degree from San Ignacio University (USA, 2013–2022). I'm also currently completing a Bootcamp at TripleTen (2025–present) focused on Data Analysis and AI.
+        - label: Are you currently learning anything new?
+          content: |
+            Yes! I'm actively expanding into Artificial Intelligence and Data Analysis. I'm training with Python, pandas, and machine learning fundamentals to complement my cloud and backend expertise with strategic data-driven decision-making skills.
+        - label: What languages do you speak?
+          content: |
+            Spanish (Native) and English at a B2 Upper Intermediate level. I communicate effectively in technical and cross-functional international teams.
+

@@ -1,0 +1,8 @@
+title: Cockfighting Management Platform
+description: A comprehensive system for registering, evaluating, and managing cockfighting competitions. Includes tournament bracket logic, inventory management, fight records by championship, and video uploads for sparring sessions and championships.
+image: /projects/plat-smartroosterbureau.png
+url: "#"
+tags: ["Laravel", "Vue 3", "MySQL", "Stored Procedures"]
+date: "2022"
+status: "completed"
+company: "AMG Financiera"

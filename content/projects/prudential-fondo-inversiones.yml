@@ -1,0 +1,8 @@
+title: Prudential — Investment Fund App
+description: A mobile application for managing and tracking investment funds. Allows users to monitor their portfolio, perform transactions, and access detailed performance reports in real time.
+image: /projects/plat-prudential-saf.png
+url: "#"
+tags: ["Flutter", "NestJS", "MongoDB", "PostgreSQL"]
+date: "2023"
+status: "completed"
+company: "Delfosti"

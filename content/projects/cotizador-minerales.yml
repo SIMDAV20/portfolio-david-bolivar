@@ -1,0 +1,8 @@
+title: Minerals Quotation Platform
+description: A quotation platform for minerals aimed at mining companies. Allows managing prices, generating quotes, and handling the commercial flow of mineral products in real time. Currently in active development.
+image: /projects/mineral-quotes.png
+url: "#"
+tags: ["Vue 3", "Laravel 10", "MySQL"]
+date: "2026"
+status: "active"
+company: "Personal Projects"
