@@ -33,12 +33,18 @@ defineProps<{
           delay: 0.1
         }"
       >
-        <UColorModeAvatar
+        <NuxtImg
+          width="234"
+          height="234"
+          class="rounded-lg aspect-square object-cover"
+          src="/avatar.jpg"
+        />
+        <!-- <UColorModeAvatar
           class="size-18 ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
           :light="global.picture?.light!"
           :dark="global.picture?.dark!"
           :alt="global.picture?.alt!"
-        />
+        /> -->
       </Motion>
     </template>
 

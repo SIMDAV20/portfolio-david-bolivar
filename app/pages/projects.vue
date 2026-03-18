@@ -33,6 +33,22 @@ useSeoMeta({
   description: page.value?.seo?.description || page.value?.description,
   ogDescription: page.value?.seo?.description || page.value?.description,
 });
+
+const tagsColor = computed<Record<string, string>>(() => {
+  return {
+    "Vue 3": "bg-green-500 text-white",
+    "Laravel 10": "bg-red-500 text-white",
+    "Laravel 12": "bg-red-500 text-white",
+    "Angular": "bg-red-500 text-white",
+    "NestJS": "bg-red-500 text-white",
+    "MySQL": "bg-blue-500 text-white",
+    "AWS": "bg-orange-500 text-white",
+    "MongoDB": "bg-[#4DB33D] text-white",
+    "Flutter": "bg-[#02569B] text-white",
+    "PostgreSQL": "bg-[#336791] text-white",
+    "Stored Procedures": "bg-[#336791] text-white",
+  };
+});
 </script>
 
 <template>
@@ -47,7 +63,7 @@ useSeoMeta({
         links: 'justify-start',
       }"
     >
-      <template #links>
+      <!-- <template #links>
         <div v-if="page.links" class="flex items-center gap-2">
           <UButton
             :label="page.links[0]?.label"
@@ -56,7 +72,7 @@ useSeoMeta({
           />
           <UButton :to="`mailto:${global.email}`" v-bind="page.links[1]" />
         </div>
-      </template>
+      </template> -->
     </UPageHero>
     <UPageSection
       :ui="{
@@ -89,6 +105,16 @@ useSeoMeta({
             </span>
           </template>
           <template #footer>
+            <div class="flex flex-row gap-2">
+              <UBadge
+                v-for="tag in project.tags"
+                :key="tag"
+                variant="subtle"
+                :class="tagsColor[tag]"
+              >
+                {{ tag }}
+              </UBadge>
+            </div>
             <!-- <ULink
               :to="project.url"
               class="text-sm text-primary flex items-center"
