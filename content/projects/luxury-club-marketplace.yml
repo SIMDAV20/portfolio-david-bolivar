@@ -6,3 +6,68 @@ tags: ["Angular", "NestJS", "MongoDB"]
 date: "2023"
 status: "completed"
 company: "Delfosti"
+moreDescription: |
+  Luxury Club Marketplace is a premium digital marketplace designed for Scotiabank’s high-value credit card clients.
+  
+  The platform provides an exclusive shopping experience where users can access luxury products, services, and personalized benefits such as discounts, coupons, and restaurant offers.
+  
+  The project was developed as an outsourcing collaboration between Delfosti, Handel, and Scotiabank. Our development team consisted of four developers and one QA, working closely with UX/UI designers to improve the overall user experience.
+  
+  The marketplace integrates multiple services and was structured into five internal sub-projects, focused on improving and expanding the platform:
+
+  1. Data Migration & Legacy Refactor
+
+  Led the migration of marketplace data to MongoDB while refactoring legacy backend modules built with Express. The previous implementation followed an inconsistent MCP/MVP-style architecture, which caused maintainability and scalability issues.
+
+  I refactored the services using NestJS best practices, restructuring the codebase with proper modules, controllers, and providers to enforce a cleaner architecture and dependency injection.
+
+  To improve reliability and maintain code quality, I also implemented a CI/CD pipeline with automated unit tests, enabling safer deployments and reducing regressions during the migration and refactoring process.
+
+  2. Checkout Refactor
+
+  Redesigned and refactored the marketplace checkout flow to support more complex purchasing scenarios and improve the user experience.
+
+  Key improvements included:
+
+  Dynamic delivery cost calculation based on the user's location.
+  Integration with PayU for payment processing and billing validation.
+  Product recommendation logic displayed during checkout to increase conversions.
+  Improved handling of order validation and payment workflows.
+  
+  3. New Marketplace Utilities
+
+  Developed several backend utilities and services to extend marketplace capabilities, including:
+
+  Order management logic and validation flows.
+  Internal tools to support featured brands and sponsored placements on the homepage.
+  Brand-specific storefronts where companies could showcase their own products and services.
+  Additional APIs to support catalog management and marketplace operations.
+
+  These utilities allowed brands to increase visibility while improving platform flexibility.
+  
+  4. Promotions & Coupon System
+
+  Implemented a complex promotions engine supporting multiple discount scenarios.
+
+  The system allowed coupons and promotions to be applied based on:
+
+  Credit card type or segment
+  Delivery conditions
+  Specific brands or product categories
+  Promotional campaigns
+
+  This logic ensured that offers could be dynamically validated depending on the user profile and the promotion rules defined by the business.
+  
+  5. Benefits Platform
+
+  Developed a benefits ecosystem connected to the marketplace, allowing users to access exclusive perks such as restaurant discounts and partner services.
+
+  In addition, I helped lead the development of a separate platform for partner businesses (e.g., restaurants) where merchants could verify whether a customer qualified for a discount based on their Scotiabank credit card segment.
+
+  This platform enabled partners to:
+
+  Validate eligible users
+  Apply discounts in real time
+  Manage benefit campaigns linked to specific credit card tiers
+
+  The system relied on segmentation data provided by **Scotiabank** and processed through Handel, allowing the marketplace to personalize offers depending on the customer segment.

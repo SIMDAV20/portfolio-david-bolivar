@@ -1,4 +1,16 @@
 <script setup lang="ts">
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  url: string;
+  tags: string[];
+  date: string;
+  status?: string;
+  company?: string;
+  moreDescription?: string;
+}
+
 const { data: page } = await useAsyncData("projects-page", () => {
   return queryCollection("pages").path("/projects").first();
 });
@@ -18,12 +30,22 @@ const projects = computed(() => {
   if (!projectsRaw.value) return [];
   return [...projectsRaw.value].sort((a, b) => {
     // Active/in-development projects always come first
-    if (a.status === "active" && b.status !== "active") return -1;
-    if (b.status === "active" && a.status !== "active") return 1;
+    const statusA = a.status || "";
+    const statusB = b.status || "";
+    if (statusA === "active" && statusB !== "active") return -1;
+    if (statusB === "active" && statusA !== "active") return 1;
     // Then sort by date descending
     return Number(b.date) - Number(a.date);
   });
 });
+
+const selectedProject = ref<Project | null>(null);
+const open = ref(false);
+
+function openProject(project: Project) {
+  selectedProject.value = project;
+  open.value = true;
+}
 
 const { global } = useAppConfig();
 
@@ -39,13 +61,13 @@ const tagsColor = computed<Record<string, string>>(() => {
     "Vue 3": "bg-green-500 text-white",
     "Laravel 10": "bg-red-500 text-white",
     "Laravel 12": "bg-red-500 text-white",
-    "Angular": "bg-red-500 text-white",
-    "NestJS": "bg-red-500 text-white",
-    "MySQL": "bg-blue-500 text-white",
-    "AWS": "bg-orange-500 text-white",
-    "MongoDB": "bg-[#4DB33D] text-white",
-    "Flutter": "bg-[#02569B] text-white",
-    "PostgreSQL": "bg-[#336791] text-white",
+    Angular: "bg-red-500 text-white",
+    NestJS: "bg-red-500 text-white",
+    MySQL: "bg-blue-500 text-white",
+    AWS: "bg-orange-500 text-white",
+    MongoDB: "bg-[#4DB33D] text-white",
+    Flutter: "bg-[#02569B] text-white",
+    PostgreSQL: "bg-[#336791] text-white",
     "Stored Procedures": "bg-[#336791] text-white",
   };
 });
@@ -81,7 +103,7 @@ const tagsColor = computed<Record<string, string>>(() => {
     >
       <Motion
         v-for="(project, index) in projects"
-        :key="project.title"
+        :key="`project-${index}`"
         :initial="{ opacity: 0, transform: 'translateY(10px)' }"
         :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
         :transition="{ delay: 0.2 * index }"
@@ -90,7 +112,6 @@ const tagsColor = computed<Record<string, string>>(() => {
         <UPageCard
           :title="project.title"
           :description="project.description"
-          :to="project.url"
           orientation="horizontal"
           variant="naked"
           :reverse="index % 2 === 1"
@@ -115,16 +136,14 @@ const tagsColor = computed<Record<string, string>>(() => {
                 {{ tag }}
               </UBadge>
             </div>
-            <!-- <ULink
-              :to="project.url"
-              class="text-sm text-primary flex items-center"
-            >
-              View Project
-              <UIcon
-                name="i-lucide-arrow-right"
-                class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
-              />
-            </ULink> -->
+
+            <UButton
+              label="More info"
+              variant="link"
+              color="neutral"
+              class="text-sm mt-2 cursor-pointer"
+              @click.stop="openProject(project)"
+            />
           </template>
           <img
             :src="project.image"
@@ -133,6 +152,24 @@ const tagsColor = computed<Record<string, string>>(() => {
           />
         </UPageCard>
       </Motion>
+
+      <UModal
+        v-model:open="open"
+        :close-button="{
+          color: 'primary',
+          variant: 'outline',
+        }"
+        :title="selectedProject?.title"
+        :ui="{
+          content: 'max-w-2xl',
+        }"
+      >
+        <template #body>
+          <div class="text-sm space-y-4 [&_ol]:list-decimal [&_ol]:ml-4 [&_li]:mb-1 [&_p]:mb-2 [&_strong]:font-semibold">
+            <MDC v-if="selectedProject?.moreDescription" :value="selectedProject.moreDescription" />
+          </div>
+        </template>
+      </UModal>
     </UPageSection>
   </UPage>
 </template>

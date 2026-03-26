@@ -84,7 +84,8 @@ export default defineContentConfig({
         tags: z.array(z.string()),
         date: z.string(),
         status: z.enum(['active', 'completed']).optional(),
-        company: z.string().optional()
+        company: z.string().optional(),
+        moreDescription: z.string().optional()
       })
     }),
     blog: defineCollection({

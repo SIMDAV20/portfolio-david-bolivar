@@ -6,3 +6,75 @@ tags: ["Vue 3", "Laravel 10", "MySQL", "AWS"]
 date: "2026"
 status: "active"
 company: "Personal Projects"
+moreDescription: |
+  The Minerals Quotation Platform is a specialized system designed for mining and mineral trading companies to calculate the commercial value of mineral shipments based on laboratory results, contract terms, and market conditions.
+
+  The main objective of the platform is to simplify and reduce errors in the mineral commercialization process, which traditionally involves complex calculations, multiple contract rules, and several operational steps between mining companies and traders.
+
+  The system manages the complete commercial workflow of mineral transactions:
+
+  1. Client and Contract Management
+
+  The process begins with registering clients and commercial contracts, where key business rules are defined, including:
+
+  - Penalties for mineral impurities
+  - Payables based on mineral content
+  - Commercial deductions and treatment charges
+  - Contract conditions specific to each mineral (e.g., zinc, lead, copper)
+
+  These rules are later used to calculate the value of mineral shipments.
+
+  2. Quotation Module
+
+  The quotation module is the core of the platform. It allows companies to estimate the value of extracted minerals based on expected mineral composition and contract conditions.
+
+  A key concept in the system is the campaign, which represents a batch of mineral extracted from a mine. This batch is transported from the mining site to a processing plant, where the mineral will eventually be prepared for export.
+
+  The platform also tracks logistics information such as:
+
+  - Truck identification
+  - Shipment records
+  - Tonnage delivered to the plant
+  3. Provisional Liquidation
+
+  After the mineral is processed, a provisional liquidation is generated.
+
+  In the mining industry, it is common for buyers to initially pay around 90% of the estimated value of the mineral shipment. This provisional settlement is based on preliminary laboratory results.
+
+  The system calculates this provisional payment automatically using the contract rules and mineral percentages.
+
+  4. Final Liquidation
+
+  Once the final laboratory results are available, the system generates the final liquidation.
+
+  At this stage:
+
+  - The final mineral percentages are confirmed.
+  - The system recalculates the total value of the shipment.
+  - Any differences from the provisional payment are adjusted.
+
+  These adjustments may result in:
+
+  - Debit invoices (if the buyer owes more money)
+  - Credit invoices (if the buyer paid too much initially)
+  5. Reports and Trader Validation
+
+  The platform generates PDF reports that allow mining companies to compare their internal calculations with the results provided by external mineral traders or laboratories.
+
+  These reports summarize:
+
+  Mineral composition percentages
+  Contract deductions
+  Final payable value in USD
+  Shipment and tonnage records
+  Technical Implementation
+
+  The platform is built with:
+
+  - Vue 3 for the frontend interface
+  - Laravel 10 for backend services and business logic
+  - MySQL for relational data management
+  - AWS infrastructure for hosting and scalability
+  - PDF reporting tools to generate official commercial documents
+
+  The system handles complex calculation logic and multi-step workflows while ensuring traceability for each mineral shipment.
